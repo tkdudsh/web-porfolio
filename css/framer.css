@@ -123,6 +123,14 @@ p { color: var(--framer-muted); }
   border-bottom: 1px solid rgba(255, 255, 255, 0.12);
   backdrop-filter: blur(16px);
 }
+.ftco-navbar-light.scrolled,
+.ftco-navbar-light.scrolled.awake,
+.ftco-navbar-light.scrolled.sleep {
+  background: rgba(0, 0, 0, 0.96) !important;
+  border-bottom-color: rgba(255, 255, 255, 0.12);
+  box-shadow: none;
+  padding: 10px 0;
+}
 .ftco-navbar-light .navbar-brand,
 .ftco-navbar-light.scrolled .navbar-brand {
   color: var(--framer-white) !important;
@@ -136,6 +144,19 @@ p { color: var(--framer-muted); }
   padding: 10px 12px;
   color: var(--framer-muted) !important;
   font: 500 12px/12px "Inter", sans-serif;
+}
+.ftco-navbar-light.scrolled .nav-item > .nav-link,
+.ftco-navbar-light.scrolled .nav-link {
+  color: var(--framer-muted) !important;
+}
+.ftco-navbar-light.scrolled .nav-item.active > a,
+.ftco-navbar-light.scrolled .nav-link.active {
+  color: var(--framer-white) !important;
+}
+.ftco-navbar-light.scrolled .navbar-toggler {
+  border: 1px solid var(--framer-border);
+  color: var(--framer-white) !important;
+  border-color: var(--framer-border) !important;
 }
 .ftco-navbar-light .navbar-nav > .nav-item > .nav-link span::before { background: var(--framer-blue); }
 .ftco-navbar-light .navbar-nav > .nav-item > .nav-link:hover,
