@@ -1,106 +1,497 @@
 <!doctype html>
 <html lang="ko">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="문제를 구조화하고 끝까지 구현하는 풀스택 개발자 사영노의 포트폴리오입니다.">
-  <meta name="theme-color" content="#08090a">
-  <title>사영노 — Full-stack Developer</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Noto+Sans+KR:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/linear.css">
-  <script src="js/portfolio.js" defer></script>
-</head>
-<body>
-  <a class="skip-link" href="#main">본문으로 바로가기</a>
-  <header class="site-header" data-header>
-    <div class="nav-shell">
-      <a class="brand" href="#home" aria-label="홈으로 이동"><span class="brand-mark" aria-hidden="true"><span></span></span><span>Sayoung No</span></a>
-      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav"><span class="sr-only">메뉴 열기</span><span></span><span></span></button>
-      <nav class="site-nav" id="site-nav" aria-label="주요 메뉴"><a href="#about">About</a><a href="#experience">Experience</a><a href="#projects">Projects</a><a href="#contact">Contact</a></nav>
-      <a class="nav-cta" href="mailto:syn_1234@naver.com">이메일 보내기 <span aria-hidden="true">↗</span></a>
-    </div>
-  </header>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="문제를 구조화하고 끝까지 구현하는 풀스택 개발자 사영노의 포트폴리오입니다."
+    />
+    <meta name="theme-color" content="#08090a" />
+    <title>사영노 — Full-stack Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Noto+Sans+KR:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/linear.css" />
+    <script src="js/portfolio.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">본문으로 바로가기</a>
+    <header class="site-header" data-header>
+      <div class="nav-shell">
+        <a class="brand" href="#home" aria-label="홈으로 이동"
+          ><span class="brand-mark" aria-hidden="true"><span></span></span
+          ><span>Sayoung No</span></a
+        >
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="site-nav"
+        >
+          <span class="sr-only">메뉴 열기</span><span></span><span></span>
+        </button>
+        <nav class="site-nav" id="site-nav" aria-label="주요 메뉴">
+          <a href="#about">About</a><a href="#experience">Experience</a
+          ><a href="#projects">Projects</a><a href="#contact">Contact</a>
+        </nav>
+        <a class="nav-cta" href="mailto:syn_1234@naver.com"
+          >이메일 보내기 <span aria-hidden="true">↗</span></a
+        >
+      </div>
+    </header>
 
-  <main id="main">
-    <section class="hero" id="home">
-      <div class="hero-glow" aria-hidden="true"></div>
-      <div class="shell hero-inner">
-        <div class="eyebrow reveal"><span class="status-dot"></span> 새로운 기회를 찾고 있습니다</div>
-        <h1 class="hero-title reveal">생각을 구조화하고,<br><span>작동하는 경험으로.</span></h1>
-        <p class="hero-copy reveal">사용자의 불편을 발견하고 프론트엔드부터 백엔드까지 직접 연결합니다. 문제를 끝까지 추적해 신뢰할 수 있는 서비스를 만드는 개발자 사영노입니다.</p>
-        <div class="hero-actions reveal"><a class="button button-primary" href="#projects">프로젝트 보기 <span>↓</span></a><a class="button button-secondary" href="https://github.com/tkdudsh" target="_blank" rel="noreferrer">GitHub <span>↗</span></a></div>
+    <main id="main">
+      <section class="hero" id="home">
+        <div class="hero-glow" aria-hidden="true"></div>
+        <div class="shell hero-inner">
+          <div class="eyebrow reveal">
+            <span class="status-dot"></span> 새로운 기회를 찾고 있습니다
+          </div>
+          <h1 class="hero-title reveal">
+            생각을 구조화하고,<br /><span>작동하는 경험으로.</span>
+          </h1>
+          <p class="hero-copy reveal">
+            사용자의 불편을 발견하고 프론트엔드부터 백엔드까지 직접 연결합니다.
+            문제를 끝까지 추적해 신뢰할 수 있는 서비스를 만드는 개발자
+            사영노입니다.
+          </p>
+          <div class="hero-actions reveal">
+            <a class="button button-primary" href="#projects"
+              >프로젝트 보기 <span>↓</span></a
+            ><a
+              class="button button-secondary"
+              href="https://github.com/tkdudsh"
+              target="_blank"
+              rel="noreferrer"
+              >GitHub <span>↗</span></a
+            >
+          </div>
 
-        <div class="product-window reveal" aria-label="개발자 프로필 요약">
-          <div class="window-bar"><div class="window-brand"><span class="mini-mark"></span><span>Portfolio</span><span class="slash">/</span><span>Overview</span></div><div class="window-actions"><span>⌕</span><span>···</span></div></div>
-          <div class="window-body">
-            <aside class="window-sidebar" aria-hidden="true"><div class="side-dot active"></div><div class="side-dot"></div><div class="side-dot"></div><div class="side-dot"></div></aside>
-            <div class="window-content">
-              <div class="window-heading"><div><span class="mono-label">DEVELOPER / SEOUL</span><h2>Build with clarity.</h2></div><div class="avatar-stack"><span>RN</span><span>JS</span><span>PY</span></div></div>
-              <div class="issue-grid">
-                <article class="issue-card featured"><div class="issue-top"><span>DEV-01</span><span class="priority">● High impact</span></div><h3>사용자 흐름을 먼저 설계합니다</h3><p>복잡한 요구를 명확한 화면과 기능 단위로 나눕니다.</p><div class="issue-tags"><span>Product thinking</span><span>UI/UX</span></div></article>
-                <article class="issue-card"><div class="issue-top"><span>DEV-02</span><span class="issue-state">In progress</span></div><h3>Frontend ↔ Backend</h3><div class="code-lines"><i></i><i></i><i></i></div><div class="issue-tags"><span>React</span><span>Node.js</span></div></article>
-                <article class="issue-card compact"><span class="mono-label">CURRENT FOCUS</span><div class="focus-row"><strong>Full-stack</strong><span>Node.js · Python · MySQL</span></div></article>
-                <article class="issue-card compact metric-card"><span class="mono-label">SHIPPED</span><strong>04</strong><span>Projects</span></article>
+          <div class="product-window reveal" aria-label="개발자 프로필 요약">
+            <div class="window-bar">
+              <div class="window-brand">
+                <span class="mini-mark"></span><span>Portfolio</span
+                ><span class="slash">/</span><span>Overview</span>
+              </div>
+              <div class="window-actions"><span>⌕</span><span>···</span></div>
+            </div>
+            <div class="window-body">
+              <aside class="window-sidebar" aria-hidden="true">
+                <div class="side-dot active"></div>
+                <div class="side-dot"></div>
+                <div class="side-dot"></div>
+                <div class="side-dot"></div>
+              </aside>
+              <div class="window-content">
+                <div class="window-heading">
+                  <div>
+                    <span class="mono-label">DEVELOPER / SEOUL</span>
+                    <h2>Build with clarity.</h2>
+                  </div>
+                  <div class="avatar-stack">
+                    <span>RN</span><span>JS</span><span>PY</span>
+                  </div>
+                </div>
+                <div class="issue-grid">
+                  <article class="issue-card featured">
+                    <div class="issue-top">
+                      <span>DEV-01</span
+                      ><span class="priority">● High impact</span>
+                    </div>
+                    <h3>사용자 흐름을 먼저 설계합니다</h3>
+                    <p>복잡한 요구를 명확한 화면과 기능 단위로 나눕니다.</p>
+                    <div class="issue-tags">
+                      <span>Product thinking</span><span>UI/UX</span>
+                    </div>
+                  </article>
+                  <article class="issue-card">
+                    <div class="issue-top">
+                      <span>DEV-02</span
+                      ><span class="issue-state">In progress</span>
+                    </div>
+                    <h3>Frontend ↔ Backend</h3>
+                    <div class="code-lines"><i></i><i></i><i></i></div>
+                    <div class="issue-tags">
+                      <span>React</span><span>Node.js</span>
+                    </div>
+                  </article>
+                  <article class="issue-card compact">
+                    <span class="mono-label">CURRENT FOCUS</span>
+                    <div class="focus-row">
+                      <strong>Full-stack</strong
+                      ><span>Node.js · Python · MySQL</span>
+                    </div>
+                  </article>
+                  <article class="issue-card compact metric-card">
+                    <span class="mono-label">SHIPPED</span><strong>04</strong
+                    ><span>Projects</span>
+                  </article>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="section about-section" id="about">
-      <div class="shell">
-        <div class="section-intro reveal"><span class="section-number">01</span><div><p class="section-kicker">About</p><h2>좋은 개발은 이해에서<br>시작된다고 믿습니다.</h2></div></div>
-        <div class="about-grid">
-          <div class="portrait-card reveal"><div class="portrait-frame"><img src="images/about.png" alt="개발자 사영노 프로필 사진" width="314" height="403"></div><div class="portrait-meta"><span>사영노</span><span>Full-stack Developer</span></div></div>
-          <div class="about-content reveal">
-            <p class="lead">웹 개발을 즐기며, 실무에서 마주치는 문제를 스스로 정의하고 해결하는 힘을 기르고 있습니다.</p>
-            <p>기능을 단순히 구현하는 데서 멈추지 않고 사용자가 어떤 순서로 서비스를 경험하는지, 데이터가 어떻게 이동하는지 함께 고민합니다. React 기반 인터페이스와 Node.js·Python 백엔드를 연결하며 서비스의 전체 흐름을 경험해 왔습니다.</p>
-            <div class="principles"><div class="principle"><span>01</span><div><h3>문제를 명확하게</h3><p>요구사항을 작은 단위로 분해하고 우선순위를 정합니다.</p></div></div><div class="principle"><span>02</span><div><h3>끝까지 추적하기</h3><p>로그와 데이터를 근거로 원인을 찾고 해결합니다.</p></div></div><div class="principle"><span>03</span><div><h3>함께 개선하기</h3><p>협업 규칙과 피드백을 통해 더 나은 결과를 만듭니다.</p></div></div></div>
+      <section class="section about-section" id="about">
+        <div class="shell">
+          <div class="section-intro reveal">
+            <span class="section-number">01</span>
+            <div>
+              <p class="section-kicker">About</p>
+              <h2>좋은 개발은 이해에서<br />시작된다고 믿습니다.</h2>
+            </div>
+          </div>
+          <div class="about-grid">
+            <div class="portrait-card reveal">
+              <div class="portrait-frame">
+                <img
+                  src="images/about.png"
+                  alt="개발자 사영노 프로필 사진"
+                  width="314"
+                  height="403"
+                />
+              </div>
+              <div class="portrait-meta">
+                <span>사영노</span><span>Full-stack Developer</span>
+              </div>
+            </div>
+            <div class="about-content reveal">
+              <p class="lead">
+                웹 개발을 즐기며, 실무에서 마주치는 문제를 스스로 정의하고
+                해결하는 힘을 기르고 있습니다.
+              </p>
+              <p>
+                기능을 단순히 구현하는 데서 멈추지 않고 사용자가 어떤 순서로
+                서비스를 경험하는지, 데이터가 어떻게 이동하는지 함께 고민합니다.
+                React 기반 인터페이스와 Node.js·Python 백엔드를 연결하며
+                서비스의 전체 흐름을 경험해 왔습니다.
+              </p>
+              <div class="principles">
+                <div class="principle">
+                  <span>01</span>
+                  <div>
+                    <h3>문제를 명확하게</h3>
+                    <p>요구사항을 작은 단위로 분해하고 우선순위를 정합니다.</p>
+                  </div>
+                </div>
+                <div class="principle">
+                  <span>02</span>
+                  <div>
+                    <h3>끝까지 추적하기</h3>
+                    <p>로그와 데이터를 근거로 원인을 찾고 해결합니다.</p>
+                  </div>
+                </div>
+                <div class="principle">
+                  <span>03</span>
+                  <div>
+                    <h3>함께 개선하기</h3>
+                    <p>협업 규칙과 피드백을 통해 더 나은 결과를 만듭니다.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="section experience-section" id="experience">
-      <div class="shell">
-        <div class="section-intro reveal"><span class="section-number">02</span><div><p class="section-kicker">Experience</p><h2>배우고, 만들고,<br>다시 개선했습니다.</h2></div></div>
-        <div class="experience-grid">
-          <div class="timeline reveal">
-            <article class="timeline-item"><div class="timeline-date">2021 — 2025</div><div><span class="item-type">Education</span><h3>한림대학교</h3><p>소프트웨어공학 콘텐츠IT 전공 · 빅데이터학과 복수전공</p></div></article>
-            <article class="timeline-item"><div class="timeline-date">2024</div><div><span class="item-type">Award</span><h3>Capstone Design Award</h3><p>음성 인식 기반 진단 모바일 앱으로 교내 캡스톤 경진대회 동상 수상</p></div></article>
-            <article class="timeline-item"><div class="timeline-date">Current</div><div><span class="item-type">Learning</span><h3>Full-stack Bootcamp</h3><p>Node.js, Python, MySQL을 활용한 풀스택 개발 역량 강화</p></div></article>
+      <section class="section experience-section" id="experience">
+        <div class="shell">
+          <div class="section-intro reveal">
+            <span class="section-number">02</span>
+            <div>
+              <p class="section-kicker">Experience</p>
+              <h2>배우고, 만들고,<br />다시 개선했습니다.</h2>
+            </div>
           </div>
-          <aside class="stack-panel reveal"><div class="panel-head"><span>Technical stack</span><span class="online-dot">Live</span></div><div class="stack-list"><div><span>01</span><strong>React / React Native</strong><span>Frontend</span></div><div><span>02</span><strong>Node.js / Express</strong><span>Backend</span></div><div><span>03</span><strong>Python / FastAPI</strong><span>API</span></div><div><span>04</span><strong>MySQL / Zustand</strong><span>Data</span></div><div><span>05</span><strong>Playwright / Electron</strong><span>Automation</span></div></div></aside>
-        </div>
-      </div>
-    </section>
-
-    <section class="section projects-section" id="projects">
-      <div class="shell">
-        <div class="section-intro projects-heading reveal"><span class="section-number">03</span><div><p class="section-kicker">Selected work</p><h2>아이디어를 실제<br>서비스로 연결합니다.</h2></div><p class="heading-note">기획 배경과 사용자 흐름, 기술적 해결 과정이 분명한 프로젝트를 소개합니다.</p></div>
-        <div class="project-list">
-          <article class="project-card reveal">
-            <div class="project-copy"><div class="project-meta"><span>01</span><span>Team project · 2025</span></div><h3>Medi-Mind <span>기억한데이</span></h3><p>사용자가 장소의 제약 없이 음성으로 치매 자가 검사를 진행하고 결과를 확인할 수 있는 모바일 서비스입니다. 녹음부터 업로드, 예측 결과까지 이어지는 전체 사용자 흐름을 설계했습니다.</p><div class="tags"><span>React Native</span><span>Expo</span><span>FastAPI</span><span>Python</span></div><a class="text-link" href="https://github.com/tkdudsh/medi-mind" target="_blank" rel="noreferrer">Repository <span>↗</span></a></div>
-            <div class="project-visual medi-visual" aria-hidden="true"><div class="phone"><div class="phone-bar"><span>9:41</span><span>● ●</span></div><div class="phone-content"><span class="app-label">MEDI-MIND</span><h4>오늘의 기억을<br>확인해 볼까요?</h4><div class="voice-ring"><i></i><b>음성 검사 시작</b></div><div class="mini-progress"><span></span><span></span><span></span></div></div></div><div class="result-float"><span class="mono-label">ANALYSIS</span><strong>검사 완료</strong><div class="result-line"><i></i></div><small>결과가 안전하게 저장되었습니다.</small></div></div>
-          </article>
-          <article class="project-card reverse reveal">
-            <div class="project-copy"><div class="project-meta"><span>02</span><span>Personal project · 2025</span></div><h3>iEUM Market</h3><p>지역 특산물의 온라인 판로를 넓히고 지역 경제의 순환을 돕는 커머스 서비스입니다. 인증, 상품, 장바구니, 주문, 게시판 API를 분리하고 지역별 판매 데이터를 시각화했습니다.</p><div class="tags"><span>React</span><span>Zustand</span><span>Node.js</span><span>Chart.js</span></div><a class="text-link" href="https://github.com/tkdudsh/iEUm-market" target="_blank" rel="noreferrer">Repository <span>↗</span></a></div>
-            <div class="project-visual market-visual" aria-hidden="true"><div class="market-nav"><span>iEUM</span><div><i></i><i></i><i></i></div></div><div class="market-heading"><span>LOCAL MARKET</span><strong>지역의 좋은 것을<br>더 가까이.</strong></div><div class="market-bottom"><div class="product-tile"><span class="product-orb"></span><small>제철 농산물</small></div><div class="product-tile"><span class="product-orb orb-two"></span><small>로컬 푸드</small></div><div class="chart-card"><span>지역별 판매</span><div class="bars"><i></i><i></i><i></i><i></i><i></i></div></div></div></div>
-          </article>
-          <div class="project-grid-small">
-            <article class="small-project reveal"><div class="small-project-top"><span>03</span><span>Personal · 2026</span></div><div class="automation-graphic" aria-hidden="true"><div class="browser-mini"><span></span><span></span><span></span></div><div class="calendar-grid"><i></i><i></i><i class="selected"></i><i></i><i></i><i></i><i></i></div><div class="cursor">↖</div></div><h3>Reservation Project</h3><p>Playwright로 반복적인 예약 과정을 자동화하고 Electron 데스크톱 앱으로 패키징했습니다.</p><div class="tags"><span>Playwright</span><span>Electron</span><span>ES Modules</span></div><a class="text-link" href="https://github.com/tkdudsh/reservation" target="_blank" rel="noreferrer">Repository <span>↗</span></a></article>
-            <article class="small-project reveal"><div class="small-project-top"><span>04</span><span>Team · 2026</span></div><div class="commerce-graphic" aria-hidden="true"><div class="court"><i></i><b></b></div><div class="payment-pill"><span>PAYMENT</span><strong>결제 승인</strong><i>✓</i></div></div><h3>TennisFolio</h3><p>상품 조회와 장바구니 CRUD, 카카오페이 결제 승인까지 커머스의 핵심 흐름을 구현했습니다.</p><div class="tags"><span>React</span><span>Node.js</span><span>MySQL</span><span>KakaoPay</span></div><a class="text-link" href="https://github.com/tkdudsh/tennis-folio-project" target="_blank" rel="noreferrer">Repository <span>↗</span></a></article>
+          <div class="experience-grid">
+            <div class="timeline reveal">
+              <article class="timeline-item">
+                <div class="timeline-date">2021 — 2025</div>
+                <div>
+                  <span class="item-type">Education</span>
+                  <h3>한림대학교</h3>
+                  <p>소프트웨어공학 콘텐츠IT 전공 · 빅데이터학과 복수전공</p>
+                </div>
+              </article>
+              <article class="timeline-item">
+                <div class="timeline-date">2024</div>
+                <div>
+                  <span class="item-type">Award</span>
+                  <h3>Capstone Design Award</h3>
+                  <p>
+                    음성 인식 기반 진단 모바일 앱으로 교내 캡스톤 경진대회 동상
+                    수상
+                  </p>
+                </div>
+              </article>
+              <article class="timeline-item">
+                <div class="timeline-date">Current</div>
+                <div>
+                  <span class="item-type">Learning</span>
+                  <h3>Full-stack Bootcamp</h3>
+                  <p>Node.js, Python, MySQL을 활용한 풀스택 개발 역량 강화</p>
+                </div>
+              </article>
+            </div>
+            <aside class="stack-panel reveal">
+              <div class="panel-head">
+                <span>Technical stack</span><span class="online-dot">Live</span>
+              </div>
+              <div class="stack-list">
+                <div>
+                  <span>01</span><strong>React / React Native</strong
+                  ><span>Frontend</span>
+                </div>
+                <div>
+                  <span>02</span><strong>Node.js / Express</strong
+                  ><span>Backend</span>
+                </div>
+                <div>
+                  <span>03</span><strong>Python / FastAPI</strong
+                  ><span>API</span>
+                </div>
+                <div>
+                  <span>04</span><strong>MySQL / Zustand</strong
+                  ><span>Data</span>
+                </div>
+                <div>
+                  <span>05</span><strong>Playwright / Electron</strong
+                  ><span>Automation</span>
+                </div>
+              </div>
+            </aside>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="section credentials-section"><div class="shell credential-grid"><div class="credential-copy reveal"><p class="section-kicker">Credentials</p><h2>꾸준한 학습을<br>결과로 남깁니다.</h2></div><div class="credential-list reveal"><div><span>2021.05</span><strong>MOS 365 Master</strong><em>Microsoft · 최종합격</em></div><div><span>2026.08</span><strong>정보처리기사</strong><em>한국산업인력공단 · 필기합격</em></div></div></div></section>
-    <section class="contact-section" id="contact"><div class="contact-glow" aria-hidden="true"></div><div class="shell contact-inner reveal"><span class="section-kicker">Let's work together</span><h2>좋은 문제를 함께<br>해결하고 싶습니다.</h2><p>사용자가 만족하고 신뢰할 수 있는 서비스를 만들기 위해 계속 배우고 개선하겠습니다.</p><a class="button button-primary contact-button" href="mailto:syn_1234@naver.com">syn_1234@naver.com <span>↗</span></a><div class="contact-links"><a href="https://github.com/tkdudsh" target="_blank" rel="noreferrer"><span>GitHub</span><strong>github.com/tkdudsh</strong></a><a href="tel:+821022503274"><span>Phone</span><strong>+82 10 2250 3274</strong></a><div><span>Location</span><strong>Seoul, Korea</strong></div></div></div></section>
-  </main>
-  <footer class="site-footer"><div class="shell"><a class="brand footer-brand" href="#home"><span class="brand-mark"><span></span></span><span>Sayoung No</span></a><p>Designed &amp; built with clarity.</p><p>© <span data-year></span> Sayoung No</p></div></footer>
-</body>
+      <section class="section projects-section" id="projects">
+        <div class="shell">
+          <div class="section-intro projects-heading reveal">
+            <span class="section-number">03</span>
+            <div>
+              <p class="section-kicker">Selected work</p>
+              <h2>아이디어를 실제<br />서비스로 연결합니다.</h2>
+            </div>
+            <p class="heading-note">
+              기획 배경과 사용자 흐름, 기술적 해결 과정이 분명한 프로젝트를
+              소개합니다.
+            </p>
+          </div>
+          <div class="project-list">
+            <article class="project-card reveal">
+              <div class="project-copy">
+                <div class="project-meta">
+                  <span>01</span><span>Team project · 2025</span>
+                </div>
+                <h3>Medi-Mind <span>기억한데이</span></h3>
+                <p>
+                  사용자가 장소의 제약 없이 음성으로 치매 자가 검사를 진행하고
+                  결과를 확인할 수 있는 모바일 서비스입니다. 녹음부터 업로드,
+                  예측 결과까지 이어지는 전체 사용자 흐름을 설계했습니다.
+                </p>
+                <div class="tags">
+                  <span>React Native</span><span>Expo</span><span>FastAPI</span
+                  ><span>Python</span>
+                </div>
+                <a
+                  class="text-link"
+                  href="https://github.com/tkdudsh/medi-mind"
+                  target="_blank"
+                  rel="noreferrer"
+                  >Repository <span>↗</span></a
+                >
+              </div>
+              <div class="project-visual medi-visual" aria-hidden="true">
+                <div class="phone">
+                  <div class="phone-bar"><span>9:41</span><span>● ●</span></div>
+                  <div class="phone-content">
+                    <span class="app-label">MEDI-MIND</span>
+                    <h4>오늘의 기억을<br />확인해 볼까요?</h4>
+                    <div class="voice-ring"><i></i><b>음성 검사 시작</b></div>
+                    <div class="mini-progress">
+                      <span></span><span></span><span></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="result-float">
+                  <span class="mono-label">ANALYSIS</span
+                  ><strong>검사 완료</strong>
+                  <div class="result-line"><i></i></div>
+                  <small>결과가 안전하게 저장되었습니다.</small>
+                </div>
+              </div>
+            </article>
+            <article class="project-card reverse reveal">
+              <div class="project-copy">
+                <div class="project-meta">
+                  <span>02</span><span>Personal project · 2025</span>
+                </div>
+                <h3>iEUM Market</h3>
+                <p>
+                  지역 특산물의 온라인 판로를 넓히고 지역 경제의 순환을 돕는
+                  커머스 서비스입니다. 인증, 상품, 장바구니, 주문, 게시판 API를
+                  분리하고 지역별 판매 데이터를 시각화했습니다.
+                </p>
+                <div class="tags">
+                  <span>React</span><span>Zustand</span><span>Node.js</span
+                  ><span>Chart.js</span>
+                </div>
+                <a
+                  class="text-link"
+                  href="https://github.com/tkdudsh/iEUm-market"
+                  target="_blank"
+                  rel="noreferrer"
+                  >Repository <span>↗</span></a
+                >
+              </div>
+              <div class="project-visual market-visual" aria-hidden="true">
+                <div class="market-nav">
+                  <span>iEUM</span>
+                  <div><i></i><i></i><i></i></div>
+                </div>
+                <div class="market-heading">
+                  <span>LOCAL MARKET</span
+                  ><strong>지역의 좋은 것을<br />더 가까이.</strong>
+                </div>
+                <div class="market-bottom">
+                  <div class="product-tile">
+                    <span class="product-orb"></span><small>제철 농산물</small>
+                  </div>
+                  <div class="product-tile">
+                    <span class="product-orb orb-two"></span
+                    ><small>로컬 푸드</small>
+                  </div>
+                  <div class="chart-card">
+                    <span>지역별 판매</span>
+                    <div class="bars"><i></i><i></i><i></i><i></i><i></i></div>
+                  </div>
+                </div>
+              </div>
+            </article>
+            <div class="project-grid-small">
+              <article class="small-project reveal">
+                <div class="small-project-top">
+                  <span>03</span><span>Personal · 2026</span>
+                </div>
+                <div class="automation-graphic" aria-hidden="true">
+                  <div class="browser-mini">
+                    <span></span><span></span><span></span>
+                  </div>
+                  <div class="calendar-grid">
+                    <i></i><i></i><i class="selected"></i><i></i><i></i><i></i
+                    ><i></i>
+                  </div>
+                  <div class="cursor">↖</div>
+                </div>
+                <h3>Reservation Project</h3>
+                <p>
+                  Playwright로 반복적인 예약 과정을 자동화하고 Electron 데스크톱
+                  앱으로 패키징했습니다.
+                </p>
+                <div class="tags">
+                  <span>Playwright</span><span>Electron</span
+                  ><span>ES Modules</span>
+                </div>
+                <a
+                  class="text-link"
+                  href="https://github.com/tkdudsh/reservation"
+                  target="_blank"
+                  rel="noreferrer"
+                  >Repository <span>↗</span></a
+                >
+              </article>
+              <article class="small-project reveal">
+                <div class="small-project-top">
+                  <span>04</span><span>Team · 2026</span>
+                </div>
+                <div class="commerce-graphic" aria-hidden="true">
+                  <div class="court"><i></i><b></b></div>
+                  <div class="payment-pill">
+                    <span>PAYMENT</span><strong>결제 승인</strong><i>✓</i>
+                  </div>
+                </div>
+                <h3>TennisFolio</h3>
+                <p>
+                  상품 조회와 장바구니 CRUD, 카카오페이 결제 승인까지 커머스의
+                  핵심 흐름을 구현했습니다.
+                </p>
+                <div class="tags">
+                  <span>React</span><span>Node.js</span><span>MySQL</span
+                  ><span>KakaoPay</span>
+                </div>
+                <a
+                  class="text-link"
+                  href="https://github.com/tkdudsh/tennis-folio-project"
+                  target="_blank"
+                  rel="noreferrer"
+                  >Repository <span>↗</span></a
+                >
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section credentials-section">
+        <div class="shell credential-grid">
+          <div class="credential-copy reveal">
+            <p class="section-kicker">Credentials</p>
+            <h2>꾸준한 학습을<br />결과로 남깁니다.</h2>
+          </div>
+          <div class="credential-list reveal">
+            <div>
+              <span>2021.05</span><strong>MOS 365 Master</strong
+              ><em>Microsoft · 최종합격</em>
+            </div>
+            <div>
+              <span>2026.08</span><strong>정보처리기사</strong
+              ><em>한국산업인력공단 · 필기합격</em>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="contact-section" id="contact">
+        <div class="contact-glow" aria-hidden="true"></div>
+        <div class="shell contact-inner reveal">
+          <span class="section-kicker">Let's work together</span>
+          <h2>좋은 문제를 함께<br />해결하고 싶습니다.</h2>
+          <p>
+            사용자가 만족하고 신뢰할 수 있는 서비스를 만들기 위해 계속 배우고
+            개선하겠습니다.
+          </p>
+          <a
+            class="button button-primary contact-button"
+            href="mailto:syn_1234@naver.com"
+            >syn_1234@naver.com <span>↗</span></a
+          >
+          <div class="contact-links">
+            <a
+              href="https://github.com/tkdudsh"
+              target="_blank"
+              rel="noreferrer"
+              ><span>GitHub</span><strong>github.com/tkdudsh</strong></a
+            ><a href="tel:+821022503274"
+              ><span>Phone</span><strong>+82 10 2250 3274</strong></a
+            >
+            <div><span>Location</span><strong>Seoul, Korea</strong></div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="shell">
+        <a class="brand footer-brand" href="#home"
+          ><span class="brand-mark"><span></span></span
+          ><span>Sayoung No</span></a
+        >
+        <p>Designed &amp; built with clarity.</p>
+        <p>© <span data-year></span> Sayoung No</p>
+      </div>
+    </footer>
+  </body>
 </html>
